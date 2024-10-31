@@ -9,7 +9,14 @@ func main()  {
 	var lastName string;
 	lastName = "Doe";
 
-	fmt.Printf("halo %s %s!\n", firstName, lastName)
-	fmt.Println("halo", firstName, lastName + "!")
+	thirdName := "Smith";
+
+	fmt.Printf("halo %s %s %s!\n", firstName, lastName, thirdName)
+	fmt.Println("halo", firstName, lastName, thirdName + "! \n")
+
+	thirdName = "Wick";
+
+	fmt.Printf("halo %s %s %s!\n", firstName, lastName, thirdName)
+	fmt.Println("halo", firstName, lastName, thirdName + "! \n")
 
 }
