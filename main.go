@@ -41,21 +41,28 @@ func main() {
 	// fmt.Printf("halo %s %s %s!\n", firstName, lastName, thirdName)
 	// fmt.Println("halo", firstName, lastName, thirdName + "! \n")
 
-	var positiveNumber uint8 = 89
-	var negativeNumber = -1243423644
+	// var positiveNumber uint8 = 89
+	// var negativeNumber = -1243423644
 
-	fmt.Printf("bilangan positif: %d\n", positiveNumber)
-	fmt.Printf("bilangan negatif: %d\n", negativeNumber)
+	// fmt.Printf("bilangan positif: %d\n", positiveNumber)
+	// fmt.Printf("bilangan negatif: %d\n", negativeNumber)
 
-	var decimalNumber = 2.62;
-	var decimalNumber2 float32 = 3.14;
-	var decimalNumber3 float64 = 8.999999999999999;
-	decimalNumber4 := 5.0;
+	// var decimalNumber = 2.62;
+	// var decimalNumber2 float32 = 3.14;
+	// var decimalNumber3 float64 = 8.999999999999999;
+	// decimalNumber4 := 5.0;
 
 
-	fmt.Printf("bilangan desimal: %f\n", decimalNumber)
-	fmt.Printf("bilangan desimal: %f\n", decimalNumber2)
-	fmt.Printf("bilangan desimal: %f\n", decimalNumber3)
-	fmt.Printf("bilangan desimal: %f\n", decimalNumber4)
-	fmt.Println("bilangan desimal: ", decimalNumber);
+	// fmt.Printf("bilangan desimal: %f\n", decimalNumber)
+	// fmt.Printf("bilangan desimal: %f\n", decimalNumber2)
+	// fmt.Printf("bilangan desimal: %f\n", decimalNumber3)
+	// fmt.Printf("bilangan desimal: %f\n", decimalNumber4)
+	// fmt.Println("bilangan desimal: ", decimalNumber);
+
+	exist := true;
+	exist2 := false;
+
+	fmt.Println("exist?", exist);
+	fmt.Printf("exist2? %t\n", exist2);
+
 }
