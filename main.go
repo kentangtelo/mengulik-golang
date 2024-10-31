@@ -5,189 +5,54 @@ import (
 )
 
 func main() {
-	for i := 0; i < 10; i++ {
-		if i%2==1 {
-			continue
-		}
 
-		if i>8 {
-			break
-		}
+	var fruits [4]string
 
-		fmt.Println("angka", i)
+	fruits = [4]string{"Apple", "Banana", "Orange", "Grapes"}
+	fmt.Println(fruits)
+
+	fruits = [4]string{
+		"Apple",
+		"Banana",
+		"Orange",
 	}
 
+	fmt.Println(fruits)
 
-	fmt.Println()
-	/*
-	*****
-	****
-	***
-	**
-	*
-	*/
 
-	for i := 0; i < 5; i++ {
-		for j := i; j < 5; j++ {
-			fmt.Print("*")
-		}
+	var numbers= [...]int{1,2,3,4,5,6,7,8,9,10}
 
-		fmt.Println()
+	fmt.Println(numbers)
+	fmt.Println(len(numbers))
+
+ 	var numbers1 = [2][3]int{[3]int{3, 2, 3}, [3]int{3, 4, 5}}
+	var numbers2 = [2][3]int{{3, 2, 3}, {3, 4, 5}}
+
+	fmt.Println("numbers1", numbers1)
+	fmt.Println("numbers2", numbers2)
+
+	fruits = [4]string{"apple", "grape", "banana", "melon"}
+
+	for i := 0; i < len(fruits); i++ {
+			fmt.Printf("elemen %d : %s\n", i, fruits[i])
 	}
 
-	fmt.Println()
-	/*
-	*
-	**
-	***
-	****
-	*****
-	*/
+	fruits = [4]string{"apple", "grape", "banana", "melon"}
 
-	for i := 0; i < 5; i++ {
-		for j := 0; j <= i; j++ {
-			fmt.Print("*")
-		}
-		fmt.Println()
+	for i, fruit := range fruits {
+			fmt.Printf("elemen %d : %s\n", i, fruit)
 	}
 
-	fmt.Println()
+	fruits = [4]string{"apple", "grape", "banana", "melon"}
 
-	/*
-	*
-	**
-	***
-	****
-	*****
-	****
-	***
-	**
-	*
-	*/
-
-	for i := 0; i < 8; i++ {
-		for j := 0; j < 5; j++ {
-			if i < 5 {
-				if j <= i {
-					fmt.Print("*")
-				}
-			} else {
-				if j < 8-i {
-					fmt.Print("*")
-				}
-			}
-		}
-		fmt.Println()
+	for _, fruit := range fruits {
+			fmt.Printf("nama buah : %s\n", fruit)
 	}
 
-	fmt.Println()
+	// kalo mau buat array dengan make() variabelnya harus slice dan belum di inisialisasi
+	var test = make([]string, 4)
+	test[0] = "apple"
+	test[1] = "manggo"
 
-	/*
-	*****
-	 ****
-	  ***
-		 **
-		  *
-	*/
-
-	for i := 0; i < 5; i++ {
-		for j := 0; j < 5; j++ {
-			if j >= i {
-				fmt.Print("*")
-			} else {
-				fmt.Print(" ")
-			}
-		}
-		fmt.Println()
-	}
-
-	fmt.Println()
-
-	/*
-	    *
-	   **
-	  ***
-	 ****
-	*****
-	*/
-
-	for i := 0; i < 5; i++ {
-		for j := 0; j < 5; j++ {
-			if j >= 4-i {
-				fmt.Print("*")
-			} else {
-				fmt.Print(" ")
-			}
-		}
-		fmt.Println()
-	}
-
-	fmt.Println()
-
-	/*
-	    *
-	   **
-	  ***
-	 ****
-	*****
-	 ****
-	  ***
-		 **
-		  *
-	*/
-
-	for i := 0; i < 9; i++ {
-		for j := 0; j < 5; j++ {
-			if i < 5 {
-				if j >= 4-i {
-					fmt.Print("*")
-				} else {
-					fmt.Print(" ")
-				}
-			} else {
-				if j >= i-4 {
-					fmt.Print("*")
-				} else {
-					fmt.Print(" ")
-				}
-			}
-		}
-		fmt.Println()
-	}
-
-	/*
-	    *
-	    **
-	   ****
-	  ******
-	 ********
-	**********
-	 ********
-	  ******
-		 ****
-		  **
-			*
-	*/
-
-	for i := 0; i < 11; i++ {
-		for j := 0; j < 11; j++ {
-			if i < 6 {
-				if j >= 5-i && j <= 5+i {
-					fmt.Print("*")
-				} else {
-					fmt.Print(" ")
-				}
-			} else {
-				if j >= i-5 && j <= 15-i {
-					fmt.Print("*")
-				} else {
-					fmt.Print(" ")
-				}
-			}
-		}
-		fmt.Println()
-	}
-
-	fmt.Println()
-
+	fmt.Println(test)
 }
