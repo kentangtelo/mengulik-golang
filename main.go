@@ -5,27 +5,35 @@ import (
 )
 
 func main() {
+	var xs ="abcdefghijklmnopqrstuvwxyz"
 
-	for i := 0; i < 5; i++ {
-		fmt.Println("Hello World")
+	for i, v := range xs {
+		fmt.Println(i, string(v))
 	}
 
-	var i int = 0
+	var ys = [5]int{1, 2, 3, 4, 5}
 
-	for i<5 {
-		fmt.Println("Angka", i)
-		i++
+	for _, v := range ys {
+		fmt.Println(v)
 	}
 
-	i=0
+	var zs = ys[1:3]
 
-	for{
-		fmt.Println("Jelek", i)
+	for _, v := range zs {
+		fmt.Println(v)
+	}
 
-		i++
-		if i == 5 {
-			break
-		}
+	var kvs = map[byte]int{'a': 1, 'b': 2, 'c': 3}
+	for k, v := range kvs {
+		fmt.Println(string(k), v)
+	}
+
+	for range kvs {
+		fmt.Println("Done")
+	}
+
+	for i:= range 5{
+		fmt.Println(i)
 	}
 
 }
